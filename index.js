@@ -132,7 +132,10 @@
             document.getElementById("divTitle").innerHTML = "<h3>Titulo</h3>"
         }
         function SaveValues(){
-            
+            var valueRes = document.getElementById("lblResult").value;
+            var resultados = new Array();
+            resultados.push(valueRes);
+            document.getElementById("lblResult").innerHTML = resultados;
         }
         window.onload = _ =>{
             /*document.getElementById("divTitulo").innerHTML = "<h2>El otro titulo</h2>"*/
