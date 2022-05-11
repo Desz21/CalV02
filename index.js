@@ -126,10 +126,12 @@
 
         function Clean(){
             
-            document.getElementById("txtValue1").value = "";
-            document.getElementById("txtValue2").value = "";
-            document.getElementById("lblResult").value= "";
+            document.getElementById("txtValue1").value = " ";
+            document.getElementById("txtValue2").value = " ";
+            document.getElementById("lblResult").value = " ";
             document.getElementById("divTitle").innerHTML = "<h3>Titulo</h3>"
+            value1 = parseInt(document.getElementById("txtValue1").value);
+            value2 = parseInt(document.getElementById("txtValue1¿2").value);
         }
         var resultados = new Array();
         function SaveValues(){
@@ -139,7 +141,7 @@
         }
         function ShowValues(){
             for (i=0; i<resultados.length;i++){
-                document.getElementById("lblResult").innerHTML = resultados[i] += '<br>';
+                document.getElementById("lblResult").innerHTML = resultados[i];
             }
         }
         window.onload = _ =>{
