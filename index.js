@@ -131,11 +131,16 @@
             document.getElementById("lblResult").value= "";
             document.getElementById("divTitle").innerHTML = "<h3>Titulo</h3>"
         }
+        var resultados = new Array();
         function SaveValues(){
             var valueRes = document.getElementById("lblResult").value;
-            var resultados = new Array();
+            
             resultados.push(valueRes);
-            document.getElementById("lblResult").innerHTML = resultados;
+        }
+        function ShowValues(){
+            for (i=0; i<resultados.length;i++){
+                document.getElementById("lblResult").innerHTML = resultados[i] += '<br>';
+            }
         }
         window.onload = _ =>{
             /*document.getElementById("divTitulo").innerHTML = "<h2>El otro titulo</h2>"*/
